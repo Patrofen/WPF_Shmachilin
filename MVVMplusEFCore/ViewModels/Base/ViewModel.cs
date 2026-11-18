@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 namespace MVVMplusEFCore.ViewModels.Base;
 
-internal abstract class ViewModel : INotifyPropertyChanged
+internal abstract class ViewModel : INotifyPropertyChanged, IDisposable
 {
     public event PropertyChangedEventHandler? PropertyChanged;
 
@@ -20,5 +20,18 @@ internal abstract class ViewModel : INotifyPropertyChanged
         field = value;
         OnPropertyChanged(propertyName);
         return true;
+    }
+
+    public void Dispose()
+    {
+        Dispose(true);
+    }
+
+    private bool _disposed;
+    protected virtual void Dispose(bool disposing)
+    {
+        if(!disposing || _disposed) return;
+        _disposed = true;
+        // Освобождение управляемых ресурсов
     }
 }
