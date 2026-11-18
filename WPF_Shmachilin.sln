@@ -2,6 +2,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMplusEFCore", "MVVMplusEFCore\MVVMplusEFCore.csproj", "{2F5B86FF-3CCF-40D5-BB84-5E349AE7A217}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8FE0217C-DB31-4FED-87A7-64DBDC1BAB17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_ShmachilinConsole", "Tests\WPF_ShmachilinConsole\WPF_ShmachilinConsole.csproj", "{C399822B-CE85-4AEF-932C-A8B638051FE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFTest", "Tests\WPFTest\WPFTest.csproj", "{3409B4E1-6C2F-4D68-9872-B2DF49533060}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +18,17 @@ Global
 		{2F5B86FF-3CCF-40D5-BB84-5E349AE7A217}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F5B86FF-3CCF-40D5-BB84-5E349AE7A217}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F5B86FF-3CCF-40D5-BB84-5E349AE7A217}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C399822B-CE85-4AEF-932C-A8B638051FE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C399822B-CE85-4AEF-932C-A8B638051FE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C399822B-CE85-4AEF-932C-A8B638051FE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C399822B-CE85-4AEF-932C-A8B638051FE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3409B4E1-6C2F-4D68-9872-B2DF49533060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3409B4E1-6C2F-4D68-9872-B2DF49533060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3409B4E1-6C2F-4D68-9872-B2DF49533060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3409B4E1-6C2F-4D68-9872-B2DF49533060}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C399822B-CE85-4AEF-932C-A8B638051FE5} = {8FE0217C-DB31-4FED-87A7-64DBDC1BAB17}
+		{3409B4E1-6C2F-4D68-9872-B2DF49533060} = {8FE0217C-DB31-4FED-87A7-64DBDC1BAB17}
 	EndGlobalSection
 EndGlobal
