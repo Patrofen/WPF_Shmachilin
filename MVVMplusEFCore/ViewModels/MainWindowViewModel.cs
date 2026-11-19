@@ -20,4 +20,18 @@ internal class MainWindowViewModel : ViewModel
         set => Set(ref _title, value);
     }
     #endregion
+
+    #region Ststus : string - Статус программы
+
+    /// <summary> Статус программы </summary>
+    private string _status = "Готов!";
+    
+    /// <summary> Статус программы </summary>
+    public string Status
+    {
+        get => _status;
+        set => Set(ref _status, value);
+    }
+
+    #endregion
 }
