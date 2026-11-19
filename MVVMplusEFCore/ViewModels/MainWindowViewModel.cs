@@ -1,3 +1,6 @@
+using System.Windows;
+using System.Windows.Input;
+using MVVMplusEFCore.Infrastructure.Commands;
 using MVVMplusEFCore.ViewModels.Base;
 
 namespace MVVMplusEFCore.ViewModels;
@@ -34,4 +37,30 @@ internal class MainWindowViewModel : ViewModel
     }
 
     #endregion
+
+    #region Команды
+
+    public ICommand CloseApplicationCommand { get; }
+
+    #region CloseApplicationCommand
+
+    private bool CanCloseApplicationCommandExecute(object p) => true;
+    private void OnCloseApplicationCommandExecuted(object p)
+    {
+        Application.Current.Shutdown();
+    }
+
+    #endregion
+    
+    #endregion
+
+    public MainWindowViewModel()
+    {
+        #region Команды
+
+        CloseApplicationCommand =
+            new LambdaCommand(OnCloseApplicationCommandExecuted, CanCloseApplicationCommandExecute);
+
+        #endregion
+    }
 }
