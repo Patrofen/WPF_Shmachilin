@@ -6,7 +6,13 @@
         xmlns:local="clr-namespace:WPFTest"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <StackPanel VerticalAlignment="Top">
+        <Button Content="Button" Width="100"></Button>
+        <RadioButton Content="Test"></RadioButton>
+        <Slider Height="30" Width="300"></Slider>
+        <CheckBox Content="checkBox" BorderThickness="3"></CheckBox>
+        <ProgressBar Height="30" Width="300" Value="25"></ProgressBar>
+        <TextBox Width="300"></TextBox>
 
-    </Grid>
+    </StackPanel>
 </Window>
